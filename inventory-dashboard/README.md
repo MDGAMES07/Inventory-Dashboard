@@ -1,18 +1,44 @@
-# React + Vite
+# Inventory Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time low stock inventory tracking dashboard built with React + Vite, powered by DummyJSON via Google Apps Script.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Real-time inventory data fetched via Google Apps Script backend
+- Low stock alerts (threshold: < 20 units)
+- Priority score calculation: (100 − stock) × price
+- Search by product name or ID
+- Filter by stock status (All / Low Stock / In Stock)
+- Sortable columns (click any column header)
+- Summary metrics: total products, low stock count, average stock, total inventory value
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Frontend:** React, Vite
+- **Backend:** Google Apps Script
+- **Data Source:** DummyJSON API
+- **Deployment:** Vercel
 
-Note: This will impact Vite dev & build performances.
+## Project Structure
+src/
+├── App.jsx        # Main dashboard component
+├── main.jsx       # React entry point
+└── index.css      # Global styles
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Built By
+
+**Mohit Dharwadkar**  
+dharwadkarmohit@gmail.com
